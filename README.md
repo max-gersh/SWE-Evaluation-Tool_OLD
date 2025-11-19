@@ -18,8 +18,10 @@ In the development of SWEET, building from previous research and our expertise, 
 
 ### SNODAS SWE
 The SNOw Data Assimilation System (SNODAS) represents a modeling and data assimilation system developed by the National Operational Hydrologic Remote Sensing Center (NOHRSC). SNODAS generates spatial estimates of SWE, snow cover, and snow depth through a combination of remotely sensed snow data and in-situ measurements of SWE from SNOTEL at a 1-km spatial resolution and 24-hour temporal resolution.
-The national SNODAS dataset is available through the SNODAS Data Products at National Snow and Ice Data Center (NSIDC), Version 1 (NOHRSC, 2004). SNODAS data can be viewed at the NOHRSC Interactive Snow Information page. Gridded observed snowfall images, seasonal totals, and data downloads in several formats can be found on the National Gridded Snowfall Analysis page.
-Refer to the SNODAS User Guide and the NSIDC Special Report 11 (Barrett, 2003) for more information.
+
+The national SNODAS dataset is available through the [SNODAS Data Products at National Snow and Ice Data Center (NSIDC), Version 1](https://nsidc.org/data/g02158/versions/1) (NOHRSC, 2004). SNODAS data can be viewed at the [NOHRSC Interactive Snow Information page](https://www.nohrsc.noaa.gov/interactive/html/map.html). Gridded observed snowfall images, seasonal totals, and data downloads in several formats can be found on the [National Gridded Snowfall Analysis page](https://www.nohrsc.noaa.gov/snowfall_v2/).
+
+Refer to the [SNODAS User Guide](https://nsidc.org/sites/default/files/g02158-v001-userguide_2_1.pdf) and the [NSIDC Special Report 11](https://nsidc.org/sites/default/files/nsidc_special_report_11.pdf) (Barrett, 2003) for more information.
 
 ### UA/SWANN SWE
 *Content describing UA/SWANN SWE workflow, model basis, resolution, and recommended usage will go here.*
