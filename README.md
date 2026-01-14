@@ -35,7 +35,7 @@ The UA/SWANN SWE dataset is publicly available from the National Snow and Ice Da
 For more information on UA/SWANN SWE, visit the [UA/SWANN User Guide](https://nsidc.org/sites/default/files/documents/user-guide/nsidc-0719-v001-userguide.pdf) and the [SnowView StoryMap](https://storymaps.arcgis.com/stories/28b6f41ba4934867873c1131c37237fd).
 
 ### CU SWE
-The University of Colorado (CU) SWE product is an experimental research dataset produced by the Mountain Hydrology Group at INSTAAR, CU Boulder. It provides near real-time SWE estimates at a 500-m spatial resolution using a spatial SWE-fusion approach (Schneider and Molotch, 2016; Yang et al., 2022). The method applies a General Linear Model in which the dependent variable is informed by operational in-situ SWE measurements from all active SNOTEL and CDEC snow pillow stations within the domain, as well as CoCoRaHS SWE observations when available. Before being incorporated into the regression model, snow pillow SWE values are scaled using the satellite-derived fractional snow-covered area (fSCA) for the 500-m pixel in which each site is located. The fSCA estimates come from the near real-time, cloud-free daily satellite image from the [Snow Today](https://nsidc.org/snow-today) fSCA image (Rittger, et. al. 2019) which uses the SPIReS algorithm (Bair, et al. 2021).
+The University of Colorado (CU) SWE product is an experimental research dataset produced by the Mountain Hydrology Group at INSTAAR, CU Boulder (Dr. Noah Molotch, Director). It provides near real-time SWE estimates at a 500-m spatial resolution using a spatial SWE-fusion approach (Schneider and Molotch, 2016; Yang et al., 2022). The method applies a General Linear Model in which the dependent variable is informed by operational in-situ SWE measurements from all active SNOTEL and CDEC snow pillow stations within the domain, as well as CoCoRaHS SWE observations when available. Before being incorporated into the regression model, snow pillow SWE values are scaled using the satellite-derived fractional snow-covered area (fSCA) for the 500-m pixel in which each site is located. The fSCA estimates come from the near real-time, cloud-free daily satellite image from the [Snow Today](https://nsidc.org/snow-today) fSCA image (Rittger, et. al. 2019) which uses the SPIReS algorithm (Bair, et al. 2021).
 
 The CU SWE product is currently being used to produce near real-time spatial estimates of SWE for the Sierra Nevada (2019 - present) and the Western US (2025 - present). To view the SWE reports, tables, and figures, visit:
 * [Sierra Nevada SWE Reports](https://www.colorado.edu/instaar/research/labs-groups/mountain-hydrology-group/sierra-nevada-swe-reports) or [Sierra Nevada GitHub](https://github.com/CU-Mountain-Hydrology/SierraNevada)
@@ -46,10 +46,11 @@ The CU SWE product is currently being used to produce near real-time spatial est
 * Logan Stephenson, CU Boulder, INSTAAR
 * Ross Palomaki, CU Boulder, INSTAAR
 * Karl Rittger, CU Boulder, INSTAAR
-* Noah Molotch, CU Boulder, INSTAAR (CU SWE Model)
 
 ## Acknowledgements
-The work completed and presented in this report is funded by NASA Western Water Actions Office (WWAO), subcontract no. 1712706, as part of the Rio Grande River Basin Needs Assessment Report (WWAO and DBS&A, 2022). The SWE Evaluation Tool is a collaborative effort from members at INSTAAR, University of Colorado Boulder, and the New Mexico Office of the State Engineer. 
+The work completed and presented in this report is funded by NASA Western Water Actions Office (WWAO), subcontract no. 1712706, as part of the Rio Grande River Basin Needs Assessment Report (WWAO and DBS&A, 2022). The SWE Evaluation Tool is a collaborative effort from members at INSTAAR, University of Colorado Boulder, and the New Mexico Office of the State Engineer.
+
+We would also like to extend our appreciation to Noah Molotch and the Mountain Hydrology Group at CU Boulder, INSTAAR, for granting our team access to the CU SWE experimental research dataset. 
 
 ## References
 Bair, E.H., T. Stillinger and J. Dozier (2021). Snow Property Inversion From Remote Sensing (SPIReS): A Generalized Multispectral Unmixing Approach With Examples From MODIS and Landsat 8 OLI. IEEE Transactions on Geoscience and Remote Sensing, 59(9): 7270-7284. DOI: 10.1109/TGRS.2020.3040328. 
