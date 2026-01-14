@@ -42,13 +42,14 @@ The CU SWE product is currently being used to produce near real-time spatial est
 * [Western US SWE Reports](https://www.colorado.edu/instaar/research/labs-groups/mountain-hydrology-group/western-us-swe-reports) or [Western US GitHub](https://github.com/CU-Mountain-Hydrology/WestWide)
 
 ## Contributors
+* Max Gersh, NM Office of the State Engineer Hydrology Bureau
 * Logan Stephenson, CU Boulder, INSTAAR
 * Ross Palomaki, CU Boulder, INSTAAR
 * Karl Rittger, CU Boulder, INSTAAR
-* Max Gersh, NM Office of the State Engineer Hydrology Bureau
+* Noah Molotch, CU Boulder, INSTAAR (CU SWE Model)
 
 ## Acknowledgements
-The work completed and presented in this report is funded by NASA Western Water Actions Office (WWAO), subcontract no. 1712706, as part of the Rio Grande River Basin Needs Assessment Report (WWAO and DBS&A, 2022). The SWE Evaluation Tool is a collaborative effort from members at INSTAAR, University of Colorado Boulder, and the New Mexico Office of the State Engineer.
+The work completed and presented in this report is funded by NASA Western Water Actions Office (WWAO), subcontract no. 1712706, as part of the Rio Grande River Basin Needs Assessment Report (WWAO and DBS&A, 2022). The SWE Evaluation Tool is a collaborative effort from members at INSTAAR, University of Colorado Boulder, and the New Mexico Office of the State Engineer. 
 
 ## References
 Bair, E.H., T. Stillinger and J. Dozier (2021). Snow Property Inversion From Remote Sensing (SPIReS): A Generalized Multispectral Unmixing Approach With Examples From MODIS and Landsat 8 OLI. IEEE Transactions on Geoscience and Remote Sensing, 59(9): 7270-7284. DOI: 10.1109/TGRS.2020.3040328. 
