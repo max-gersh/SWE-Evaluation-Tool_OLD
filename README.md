@@ -5,7 +5,7 @@ This repository provides reports, figures, and data for near real-time spatial e
 For more information or to be added to the email list, contact Max Gersh at Max.Gersh@ose.nm.gov.
 
 ## Introduction
-The Rio Grande (RG) is a snowmelt-driven river system with up to 75% of its water originating from seasonal snowpack in the mountains of Colorado and northern New Mexico (Moeser et al., 2021). Snowpack acts as a natural reservoir in the RG Basin, gradually releasing meltwater during the spring and early summer months, sustaining streamflow and providing vital water supply for downstream users. However, regional decreases in snowpack volume and earlier snowmelt timing, especially throughout the western U.S. and New Mexico, can lead to reduced water availability (Mote et al., 2005; EPA, 2016b; Mote et al., 2018; Hale et al., 2023).
+The Rio Grande (RG) is a snowmelt-driven river system with up to 75% of its water originating from seasonal snowpack in the mountains of Colorado and northern New Mexico (Moeser et al., 2021). Snowpack acts as a natural reservoir in the RG Basin, gradually releasing meltwater during the spring and early summer months, sustaining streamflow and providing vital water supply for downstream users. However, regional decreases in snowpack volume and earlier snowmelt timing, especially throughout the western U.S. and New Mexico, can lead to reduced water availability (Mote et al., 2005; Mote et al., 2018; Hale et al., 2023).
 
 Long-term changes in snowpack patterns and timing can serve as an indicator of climate change, while understanding short-term changes is critical for monitoring seasonal variability and forecasting seasonal water supply. Monitoring snowpack provides valuable data on shifts in precipitation patterns and temperatures, helping scientists and decision-makers better understand and manage climate-related challenges.
 
@@ -14,7 +14,7 @@ Snow water equivalent (SWE) is the estimate of the depth of liquid water contain
 ![Overview map of the Rio Grande (RG) Basin study area. The Rio Grande Headwaters, Upper Rio Grande, and Rio Grande-Elephant Butte Basins are presented as the standard HUC6 basins. HUC8 groupings (Jemez – orange, Rio Chama – green, Sangre de Cristo – yellow, and Upper Rio Grande – brown) are symbolized](General/Overview_Map.png)
 
 ## SWE Evaluation Tool (SWEET)
-The RG Basin, and more broadly the Western U.S., is experiencing a prolonged and severe drought (EPA, 2016a), exacerbated by a warming climate that increases evapotranspiration, reduces overall snowpack quantity, and reduces the seasonal duration of snowpack. The application of the SWE Evaluation Tool (SWEET) will supply scientists and decision-makers with an improved insight into the spatial distribution of SWE by providing near real-time spatial SWE estimates for the RG Basin, its subbasins, and elevation bands within the basin.
+The RG Basin, and more broadly the Western U.S., is experiencing a prolonged and severe drought, exacerbated by a warming climate that increases evapotranspiration, reduces overall snowpack quantity, and reduces the seasonal duration of snowpack. The application of the SWE Evaluation Tool (SWEET) will supply scientists and decision-makers with an improved insight into the spatial distribution of SWE by providing near real-time spatial SWE estimates for the RG Basin, its subbasins, and elevation bands within the basin.
 
 Because no spaceborne sensor can directly measure SWE, spatial distribution of SWE must be estimated from remotely sensed observations coupled with modeling approaches. However, gridded SWE products are known to have accuracy issues across both mountainous and non-mountainous regions (Mudryk et al., 2025), resulting in a range of spatial SWE estimates for any given location. For this reason, the New Mexico Office of the State Engineer (NM OSE) and Institute of Arctic and Alpine Research (INSTAAR) are developing a tool to integrate various, suitable data products to build SWEET based on an ensemble of spatially estimated SWE. By taking an ensemble approach, the goal for SWEET is to provide spatial SWE estimations for the RG Basin that are, on average, equally or more accurate than any individual model.
 
@@ -35,12 +35,9 @@ The UA/SWANN SWE dataset is publicly available from the National Snow and Ice Da
 For more information on UA/SWANN SWE, visit the [UA/SWANN User Guide](https://nsidc.org/sites/default/files/documents/user-guide/nsidc-0719-v001-userguide.pdf) and the [SnowView StoryMap](https://storymaps.arcgis.com/stories/28b6f41ba4934867873c1131c37237fd).
 
 ### CU SWE
-The University of Colorado (CU) SWE-Fusion product is an experimental research dataset produced by the Mountain Hydrology Group at INSTAAR, CU Boulder (Dr. Noah Molotch, Director). It provides near real-time SWE estimates at a 500-m spatial resolution using a spatial SWE-fusion approach (Schneider and Molotch, 2016; Yang et al., 2022). The method applies a General Linear Model in which the dependent variable is informed by operational in-situ SWE measurements from all active SNOTEL and CDEC snow pillow stations within the domain, as well as CoCoRaHS SWE observations when available. Before being incorporated into the regression model, snow pillow SWE values are scaled using the satellite-derived fractional snow-covered area (fSCA) for the 500-m pixel in which each site is located. The fSCA estimates come from the near real-time, cloud-free daily satellite image from the [Snow Today](https://nsidc.org/snow-today) fSCA image (Rittger, et. al. 2019) which uses the SPIReS algorithm (Bair, et al. 2021).
-
-The SWE-Fusion framework has been employed by the Mountain Hydrology Group in real-time to provide snowpack information for the Sierra Nevada, California since 2012, for the Southern Rockies / Upper Colorado River Basin (Intermountain West) since 2019, and for the Western US since 2025. To view the SWE reports, tables, and figures, visit:
-* [Sierra Nevada SWE Reports](https://www.colorado.edu/instaar/research/labs-groups/mountain-hydrology-group/sierra-nevada-swe-reports) / [Sierra Nevada GitHub](https://github.com/CU-Mountain-Hydrology/SierraNevada)
-* [Western US SWE Reports](https://www.colorado.edu/instaar/research/labs-groups/mountain-hydrology-group/western-us-swe-reports) / [Western US GitHub](https://github.com/CU-Mountain-Hydrology/WestWide)
-* [Intermountain West SWE Reports](https://www.colorado.edu/instaar/research/labs-groups/mountain-hydrology-group/intermountain-west-swe-reports)
+The University of Colorado (CU) SWE-Fusion product is an operational SWE dataset produced by the Mountain Hydrology Group at INSTAAR, CU Boulder (Professor Noah Molotch, Director). It provides near real-time SWE estimates at a 500-m spatial resolution using a spatial SWE-fusion approach that leverages historical satellite / model-based SWE reanalyses which guides the manner in which SNOTEL SWE are interpolated across the region (Schneider and Molotch, 2016; Yang et al., 2022). The method applies a General Linear Model in which SNOTEL SWE measurements (dependent variable) are related to a suite of independent variables including the historical SWE reanalyses and terrain-related variables. The model output is then scaled by satellite-observed fractional snow-covered area (fSCA) from [Snow Today](https://nsidc.org/snow-today) (Rittger, et. al. 2019) which uses the SPIReS algorithm (Bair, et al. 2021). 
+ 
+The SWE-Fusion framework has been employed by the Mountain Hydrology Group in near-real-time to provide snowpack information for the Sierra Nevada, California since 2012, for the Southern Rockies / Upper Colorado River Basin (Intermountain West) since 2019, and for the Western US since 2025. To view the SWE reports, tables, and figures, visit the Mountain Hydrology Group's [webpage](https://www.colorado.edu/instaar/research/labs-groups/mountain-hydrology-group/western-us-swe-reports).
 
 ## Contributors
 * Max Gersh, NM Office of the State Engineer Hydrology Bureau
@@ -51,7 +48,7 @@ The SWE-Fusion framework has been employed by the Mountain Hydrology Group in re
 ## Acknowledgements
 The work completed and presented in this report is funded by NASA Western Water Actions Office (WWAO), subcontract no. 1712706, as part of the Rio Grande River Basin Needs Assessment Report (WWAO and DBS&A, 2022). The SWE Evaluation Tool is a collaborative effort from members at INSTAAR, University of Colorado Boulder, and the New Mexico Office of the State Engineer.
 
-We would also like to extend our appreciation to Noah Molotch and the Mountain Hydrology Group at CU Boulder, INSTAAR, for granting our team access to the CU SWE experimental research dataset. 
+We would also like to extend our appreciation to Noah Molotch and the Mountain Hydrology Group at CU Boulder, INSTAAR, for granting our team access to the CU SWE operational SWE dataset. 
 
 ## References
 Bair, E.H., T. Stillinger and J. Dozier (2021). Snow Property Inversion From Remote Sensing (SPIReS): A Generalized Multispectral Unmixing Approach With Examples From MODIS and Landsat 8 OLI. IEEE Transactions on Geoscience and Remote Sensing, 59(9): 7270-7284. DOI: 10.1109/TGRS.2020.3040328. 
@@ -61,10 +58,6 @@ Barrett, Andrew. (2003). National Operational Hydrologic Remote Sensing Center S
 Broxton, P., X. Zeng, and N. Dawson. (2019). Daily 4 km Gridded SWE and Snow Depth from Assimilated In-Situ and Modeled Data over the Conterminous US. (NSIDC-0719, Version 1). SWE Dataset. Boulder, Colorado USA. NASA National Snow and Ice Data Center Distributed Active Archive Center. https://doi.org/10.5067/0GGPB220EX6A.
 
 Broxton, P., M. R. Ehsani, A. Behrangi, M. Reza. (2024). Improving mountain snowpack estimation using machine learning with Sentinel-1, the Airborne Snow Observatory, and University of Arizona snowpack data. Earth and Space Science, https://doi.org/10.1029/2023EA002964.
-
-Environmental Protection Agency [EPA]. (2016a). Climate Change Indicators: Drought. Web update: June 2024. Available at: https://www.epa.gov/climate-indicators/climate-change-indicators-drought. Accessed: March 31, 2025.
-
-Environmental Protection Agency [EPA]. (2016b) Climate Change Indicators: Snowpack. Web update: June 2024. Available at: https://www.epa.gov/climate-indicators/climate-change-indicators-snowpack. Accessed: March 31, 2025.
 
 Hale, K.E., Jennings, K.S., Musselman, K.N., Livneh, B., Molotch, N.P. (2023). Recent decreases in snow water storage in western North America. Communications Earth & Environment, 4(1), p. 170. Available at: https://doi.org/10.1038/s43247-023-00751-3.
 
