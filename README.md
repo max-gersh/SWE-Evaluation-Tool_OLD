@@ -2,7 +2,7 @@
 
 This repository provides reports, figures, and data for near real-time spatial estimates of Snow Water Equivalent (SWE) across the Rio Grande Basin using the SWE Evaluation Tool (SWEET). SWEET integrates various, suitable data products to build an ensemble of spatially estimated SWE to support hydrologic assessments, water supply forecasting, snow monitoring, and research applications.
 
-For more information or to be added to the email list, contact Max Gersh at Max.Gersh@ose.nm.gov.
+For more information or to be added to the distribution list, contact Max Gersh at Max.Gersh@ose.nm.gov.
 
 ## Introduction
 The Rio Grande (RG) is a snowmelt-driven river system with up to 75% of its water originating from seasonal snowpack in the mountains of Colorado and northern New Mexico (Moeser et al., 2021). Snowpack acts as a natural reservoir in the RG Basin, gradually releasing meltwater during the spring and early summer months, sustaining streamflow and providing vital water supply for downstream users. However, regional decreases in snowpack volume and earlier snowmelt timing, especially throughout the western U.S. and New Mexico, can lead to reduced water availability (Mote et al., 2005; Mote et al., 2018; Hale et al., 2023).
